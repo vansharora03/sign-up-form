@@ -70,6 +70,7 @@ span {
 
 
 .form-content label {
+    width: 150px;
     margin-bottom: 5px;
     display: block;
     font-size: 0.8rem;
@@ -133,6 +134,15 @@ input:required+span::after {
     content: "required";
 }
 
+input:optional+span::after {
+    padding: 1px;
+    font-size: 0.7rem;
+    color: #E5E7EB;
+    background-color: grey;
+    content: "required";
+    visibility: hidden;
+}
+
 .error:invalid+span::after {
     background-color: red;
 }
@@ -142,4 +152,5 @@ input:required+span::after {
     color: red;
     font-size: 0.9rem;
 }
+
 
