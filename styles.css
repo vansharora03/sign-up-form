@@ -15,6 +15,12 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+span {
+    position: relative;
+    left: 100px;
+    bottom: 2px;
+}
+
 .image-sidebar {
     width: 40%;
     height: 30vh;
@@ -44,6 +50,7 @@ body {
 }
 
 .form-content {
+    position: relative;
     background: white;
     border: none;
     border-radius: 5px;
@@ -63,6 +70,7 @@ body {
 
 
 .form-content label {
+    margin-bottom: 5px;
     display: block;
     font-size: 0.8rem;
 }
@@ -89,7 +97,11 @@ button {
 
     cursor: pointer;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: darkred;
 }
 
 .form-content input:focus {
@@ -101,6 +113,10 @@ a {
     color: crimson;
 }
 
+a:hover {
+    color: darkred;
+}
+
 .error:invalid {
     outline: 2px solid red;
 }
@@ -108,3 +124,22 @@ a {
 .password-mismatch {
     outline: 2px solid red;
 }
+
+input:required+span::after {
+    padding: 1px;
+    font-size: 0.7rem;
+    color: #E5E7EB;
+    background-color: grey;
+    content: "required";
+}
+
+.error:invalid+span::after {
+    background-color: red;
+}
+
+.password-mismatch-message {
+    margin-bottom: 10px;
+    color: red;
+    font-size: 0.9rem;
+}
+

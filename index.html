@@ -13,32 +13,32 @@
 				is <strong>free</strong> and only takes a few minutes.</h1>
 			<h1>What are you waiting for?</h1>
 			<form action="" class="form-content" id="sign_up_form">
-				<div class="form-row">
+				<div class="form-row row-1">
 					<div class="label-input-group"><label for="first_name">FIRST NAME</label><input id="first_name"
 																									type="text"
-																									name=user_first_name" required placeholder="John">
+																									name=user_first_name" required placeholder="John"><span></span>
 					</div>
 					<div class="label-input-group"><label for="last_name">LAST NAME</label><input id="last_name"
 																								  type="text"
-																								  name="user_last_name" required placeholder="Doe">
+																								  name="user_last_name" required placeholder="Doe"><span></span>
 					</div>
 				</div>
-				<div class="form-row">
+				<div class="form-row row-2">
 					<div class="label-input-group"><label for="email">EMAIL</label><input id="email" type="email"
-																						  name="user_email" required placeholder="jd123@email.com"></div>
+																						  name="user_email" placeholder="jd123@email.com"><span></span></div>
 					<div class="label-input-group"><label for="phone">PHONE NUMBER</label><input id="phone" type="tel"
-																								 name="user_phone_number" required placeholder="(123)-456-7890">
+																								 name="user_phone_number" placeholder="(123)-456-7890"><span></span>
 					</div>
 				</div>
-				<div class="form-row">
+				<div class="form-row row-3">
 					<div class="label-input-group"><label for="password">PASSWORD</label><input id="password"
 																								type="password"
-																								name="password" required placeholder=""></div>
+																								name="password" required placeholder=""><span></span></div>
 					<div class="label-input-group"><label for="confirm_password">CONFIRM PASSWORD</label><input
-							id="confirm_password" type="password" name="confirm_password" required></div>
+							id="confirm_password" type="password" name="confirm_password" required><span></span></div>
 				</div>
 			</form>
-			<button id="submit-button">Create Account</button>
+			<button id="submit-button">Create Account</button><p class="password-mismatch-message"></p>
 			<p>Already have an account? <a href="">Log in</a></p>
 		</div>
 	</body>

@@ -1,8 +1,9 @@
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm_password");
-const button = document.querySelector("#submit-button")
-const form = document.querySelector("#sign_up_form")
-const fields = document.querySelectorAll("input")
+const button = document.querySelector("#submit-button");
+const form = document.querySelector("#sign_up_form");
+const fields = document.querySelectorAll("input");
+const confirmPasswordMessage = document.querySelector(".password-mismatch-message");
 
 const formIsValid = function() {
     let foundInvalid = false;
@@ -22,18 +23,17 @@ const submitForm = function() {
     if (password.value !== confirmPassword.value) {
         password.classList.add('password-mismatch');
         confirmPassword.classList.add('password-mismatch');
-        alert("Passwords must match!");
+        confirmPasswordMessage.textContent = "Please ensure passwords match.";
     } else {
         if(confirmPassword.classList.contains('password-mismatch') &&
             password.classList.contains('password-mismatch')) {
             password.classList.remove('password-mismatch');
             confirmPassword.classList.remove('password-mismatch');
+            confirmPasswordMessage.textContent = "";
         }
         console.log(formIsValid())
         if(formIsValid()) {
             form.submit();
-        } else {
-            alert("Please enter all form data correctly.")
         }
     }
 }
