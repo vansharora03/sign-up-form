@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/space-background.jpg");
+    background-repeat: repeat-y;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.image-sidebar {
+    width: 40%;
+}
+
+.form-sheet {
+    width: 60%;
+    height: 100vh;
+    background: whitesmoke;
+    padding: 30px 60px;
+}
+
+.form-sheet h1 {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.form-content {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: start;
+    gap: 20%;
+}
+
+input {
+    appearance: none;
+}
+
+.form-content label {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.form-content input {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 150px;
+    height: 20px;
+    font-size: 1.0rem;
+}
+
+button {
+    margin-bottom: 20px;
+}
