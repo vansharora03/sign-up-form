@@ -7,6 +7,10 @@
 body {
     background-image: radial-gradient(skyblue, crimson);
     background-repeat: repeat-y;
+    height: 100vh;
+    overflow-y: hidden;
+
+    margin-top: 10px;
 
     display: flex;
     justify-content: space-evenly;
@@ -24,7 +28,6 @@ span {
 .image-sidebar {
     width: 40%;
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 300px;
 }
 
